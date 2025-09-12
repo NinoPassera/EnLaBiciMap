@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Estaciones de Bicicletas - Mendoza</name>
+    <description>Estaciones de bicicletas públicas de Mendoza con disponibilidad en tiempo real</description>
+    <Style id="station-many">
+      <IconStyle>
+        <color>ff00ff00</color>
+        <scale>1.0</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/bicycle.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="station-few">
+      <IconStyle>
+        <color>ff00ffff</color>
+        <scale>1.0</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/bicycle.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="station-empty">
+      <IconStyle>
+        <color>ff0000ff</color>
+        <scale>1.0</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/bicycle.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Estaciones de Bicicletas</name>
+      <Placemark>
+        <name>01- ALAMEDA (10 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;01- ALAMEDA&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 10&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:54:15&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.83681,-32.88167,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>02- PASEO VILLALONGA (4 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;02- PASEO VILLALONGA&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 4&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 11:51:41&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.84838,-32.88407,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>03- PARQUE O´HIGGINS (7 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;03- PARQUE O´HIGGINS&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 7&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:25:49&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.8297,-32.88477,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>04- PLAZA SAN MARTIN (5 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;04- PLAZA SAN MARTIN&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 5&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:25:18&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.84085,-32.88718,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>05- PLAZA INDEPENDENCIA (8 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;05- PLAZA INDEPENDENCIA&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 8&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:43:12&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.84484,-32.88939,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>06- ARISTIDES VILLANUEVA (1 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;06- ARISTIDES VILLANUEVA&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 1&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 11:14:34&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.86011,-32.89142,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>07- KM 0 (12 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;07- KM 0&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 12&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 10:31:59&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.83887344047548,-32.890715045452176,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>08- HOSPITAL CENTRAL (8 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;08- HOSPITAL CENTRAL&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 8&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 9/9/2025, 03:59:24&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.83443,-32.89245,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>10- MUNICIPALIDAD CIUDAD (4 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;10- MUNICIPALIDAD CIUDAD&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 4&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 9/9/2025, 07:38:06&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.84308,-32.89809,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>11- PEDRO MOLINA (2 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;11- PEDRO MOLINA&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 2&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:03:22&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.84604,-32.89633,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>12- BELGRANO (15 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;12- BELGRANO&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 15&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:12:30&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.85132,-32.8938,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>13- MARIANO MORENO (3 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;13- MARIANO MORENO&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 3&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 10:54:54&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.85315,-32.90279,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>14- PLAZOLETA  BARRAQUERO (3 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;14- PLAZOLETA  BARRAQUERO&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 3&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 9/9/2025, 09:13:51&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.84246,-32.90392,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>15- ARIZU (7 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;15- ARIZU&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 7&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:26:11&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.843851167984,-32.908628458011854,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>16- PELLEGRINI (5 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;16- PELLEGRINI&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 5&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:37:41&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.85218,-32.90844,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>17- CHACABUCO (5 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;17- CHACABUCO&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 5&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 12:05:17&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.8507,-32.91599,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>18- ANZORENA (8 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;18- ANZORENA&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 8&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 12:28:27&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.84637,-32.9163,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>19- PARQUE MITRE (7 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;19- PARQUE MITRE&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 7&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 12:02:46&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.84014,-32.92154,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>20- PLAZA GODOY CRUZ (8 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;20- PLAZA GODOY CRUZ&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 8&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 03:12:30&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.84405040740965,-32.924805161663286,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>21- PARQUE ALFONSIN (11 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;21- PARQUE ALFONSIN&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 11&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 12:32:25&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.85168,-32.92152,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>22- PARQUE SAN VICENTE (8 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;22- PARQUE SAN VICENTE&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 8&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 12:18:04&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.8513809636956,-32.93178365730272,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>23_PUENTE CICLOVÍA (6 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;23_PUENTE CICLOVÍA&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 6&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:23:47&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.85025,-32.94002,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>24_PARQUE BENEGAS (6 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;24_PARQUE BENEGAS&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 6&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 11:09:07&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.85304,-32.95237,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>25_PARQUE LINEAL (7 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;25_PARQUE LINEAL&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 7&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:17:10&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.84326,-32.8703,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>26_CARRODILLA (8 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;26_CARRODILLA&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 8&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 12:07:28&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.85259,-32.95887,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>09_TERMINAL (8 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;09_TERMINAL&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 8&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 12:00:23&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.830968,-32.893892,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>35- HOSPITAL MILITAR (6 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;35- HOSPITAL MILITAR&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 6&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 02:57:42&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.8598689,-32.8802579,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>28- PLAZA DR. MATONS (5 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;28- PLAZA DR. MATONS&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 5&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 9/9/2025, 09:06:16&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.851832,-32.873507,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>27- PARQUE CENTRAL (9 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;27- PARQUE CENTRAL&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 9&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 09:20:52&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.839175,-32.878504,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>29- LOS CONSTITUYENTES (4 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;29- LOS CONSTITUYENTES&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 4&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 10:12:20&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.849,-32.86487,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>31-PASEO MOSCONI (9 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;31-PASEO MOSCONI&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 9&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 9/9/2025, 11:25:23&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.8327164,-32.8621688,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hub-prueba (0 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;Hub-prueba&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 13/9/2023, 04:47:10&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-empty</styleUrl>
+        <Point>
+          <coordinates>-68.86474374219898,-32.88644001979814,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>34- PLAZA PEDRO DEL CASTILLO (11 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;34- PLAZA PEDRO DEL CASTILLO&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 11&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:25:48&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.828269,-32.879188,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>30- SAN ANTONIO (5 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;30- SAN ANTONIO&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 5&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:44:02&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.82757,-32.86998,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>38- PLAZA NESTOR LENCINAS (6 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;38- PLAZA NESTOR LENCINAS&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 6&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:28:25&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.8244375,-32.8934375,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>42-JULIO LE PARC (8 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;42-JULIO LE PARC&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 8&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:11:14&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.815511,-32.889117,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>46- PANAMERICANA (7 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;46- PANAMERICANA&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 7&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 12:11:29&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.864111,-32.960232,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>48- PLAZA CHACRAS (6 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;48- PLAZA CHACRAS&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 6&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 11:55:44&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.882568,-32.986616,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>47- BESARES (3 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;47- BESARES&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 3&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 12:58:46&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.875186,-32.981171,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>39- EJERCITO DE LOS ANDES (2 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;39- EJERCITO DE LOS ANDES&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 2&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 09:15:05&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.8326816,-32.9106107,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>40- PEDRO VARGAS  (5 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;40- PEDRO VARGAS &lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 5&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 11:48:46&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.833297,-32.902574,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>41- ESCUELA JORGE A CALLE (8 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;41- ESCUELA JORGE A CALLE&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 8&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 12:36:08&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.826308,-32.903721,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>45- PROGRESO (3 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;45- PROGRESO&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 3&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 12:54:08&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.833396,-32.9264,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>44- PLAZA MOISES LEBENSOHN (4 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;44- PLAZA MOISES LEBENSOHN&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 4&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 11:37:12&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.820714,-32.900404,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>37- ESCUELA GUILLERMO CANO (7 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;37- ESCUELA GUILLERMO CANO&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 7&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 9/9/2025, 09:47:38&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.821927,-32.88904,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TALLER BICITRAN (0 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;TALLER BICITRAN&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 11:33:46&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-empty</styleUrl>
+        <Point>
+          <coordinates>-68.82992639999999,-32.8798711,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>49- FUENTE DE LOS CONTINENTES (8 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;49- FUENTE DE LOS CONTINENTES&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 8&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:53:37&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.866387,-32.889321,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>50- CLUB REGATAS (2 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;50- CLUB REGATAS&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 2&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:35:58&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.867444,-32.894291,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>52- PLAZOLETA KOLTON (1 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;52- PLAZOLETA KOLTON&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 1&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 11:32:12&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.864646,-32.901498,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>51- GIMNASIO N°1 (5 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;51- GIMNASIO N°1&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 5&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:13:15&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.859202,-32.895967,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>43- REMEDIOS ESCALADA (5 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;43- REMEDIOS ESCALADA&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 5&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 9/9/2025, 09:41:16&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.834443,-32.916141,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>53- PLAZA BELGRANO (6 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;53- PLAZA BELGRANO&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 6&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 10:04:53&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.847875,-32.900792,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>72- EX CARBOMETAL (5 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;72- EX CARBOMETAL&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 5&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 12:12:57&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.859658,-32.981438,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>54- VILLA HIPODRÓMO (5 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;54- VILLA HIPODRÓMO&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 5&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 06:57:40&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.8602657857373,-32.91035069645056,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>55- POMPEYA (3 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;55- POMPEYA&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 3&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 12:39:55&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.85927823854797,-32.91644000854086,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>58- TIBURCIO BENEGAS (8 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;58- TIBURCIO BENEGAS&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 8&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 9/9/2025, 09:13:34&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.858251,-32.937894,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>73- ALMIRANTE BROWN (4 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;73- ALMIRANTE BROWN&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 4&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 10:32:52&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.887128,-33.00572,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>74- PLAZA MARCOS BURGOS (14 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;74- PLAZA MARCOS BURGOS&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 14&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:12:40&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.841061,-32.850084,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>76- PARQUE LINEAL LAS HERAS (5 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;76- PARQUE LINEAL LAS HERAS&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 5&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:33:33&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.859313,-32.855822,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>75- PARQUE DE LA FAMILIA (4 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;75- PARQUE DE LA FAMILIA&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 4&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:46:03&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.859978,-32.847748,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>77-IRRIGACIÓN (2 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;77-IRRIGACIÓN&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 2&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 9/9/2025, 09:45:33&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.839932,-32.882269,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>69- AVELLANEDA (6 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;69- AVELLANEDA&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 6&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 9/9/2025, 10:29:50&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.78999050000002,-32.8940215,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>67- HOSPITAL NOTTI (7 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;67- HOSPITAL NOTTI&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 7&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 07:21:00&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.80394746494292,-32.897426739931674,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>68- MUNICIPALIDAD DE GUAYMALLEN (6 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;68- MUNICIPALIDAD DE GUAYMALLEN&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 6&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 12:10:38&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.787878,-32.9000779,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>61- PUENTE OLIVE (7 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;61- PUENTE OLIVE&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 7&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 04:23:56&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.8412191,-32.93879,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>60- CERVANTES (5 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;60- CERVANTES&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 5&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 12:15:43&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.843117,-32.947801,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>62- ACCESO SUR (2 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;62- ACCESO SUR&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 2&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 03:57:00&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.829547,-32.940632,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>57-  HOSPITAL EL CARMEN (7 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;57-  HOSPITAL EL CARMEN&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 7&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 12:48:01&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.8586956,-32.9277425,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>33- HOSPITAL UNIVERSITARIO (5 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;33- HOSPITAL UNIVERSITARIO&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 5&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 9/9/2025, 07:08:50&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.8544052,-32.8684436,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>36- SAN LUIS (8 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;36- SAN LUIS&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 8&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:46:24&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.834074,-32.853704,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>32- BOULEVARD PERÚ (8 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;32- BOULEVARD PERÚ&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 8&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:26:11&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.8419395,-32.8625917,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>70- JUAN JOSÉ PASO (6 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;70- JUAN JOSÉ PASO&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 6&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 9/9/2025, 10:54:17&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.8545931,-32.9659987,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>83- SUIPACHA (3 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;83- SUIPACHA&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 3&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:54:22&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.84990367976226,-32.87811512074015,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>82- SANTIAGO DEL ESTERO (4 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;82- SANTIAGO DEL ESTERO&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 4&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 02:11:43&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.83403607665177,-32.87068161934787,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>85- CORREO ARGENTINO (7 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;85- CORREO ARGENTINO&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 7&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 10:22:56&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.84067,-32.89518,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>86- PLAZOLETA GUALBERTO GODOY (5 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;86- PLAZOLETA GUALBERTO GODOY&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 5&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:23:31&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.85631,-32.88518,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>80- POLIDEPORTIVO QUINO (5 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;80- POLIDEPORTIVO QUINO&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 5&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 12:44:05&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.80811418095092,-32.908960210849635,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>87- MORÓN (7 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;87- MORÓN&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 7&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:36:59&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.83748,-32.899543,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>79- LAS TORRES (3 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;79- LAS TORRES&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 3&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:12:05&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.80048,-32.90483,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>78- MENDOZA SHOPPING (7 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;78- MENDOZA SHOPPING&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 7&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 12:19:40&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.79983,-32.90099,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>90- PLAZA SARMIENTO (7 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;90- PLAZA SARMIENTO&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 7&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 11:02:22&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.83259,-32.88777,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>88- RAWSON (6 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;88- RAWSON&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 6&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 12:12:00&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.84698,-32.95348,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>91-DORREGO (3 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;91-DORREGO&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 3&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 10:54:58&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.82878788339767,-32.898053549965404,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>92- ROTONDA DEL ARADO (4 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;92- ROTONDA DEL ARADO&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 4&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 9/9/2025, 11:31:46&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.908444,-33.031611,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>94- PARQUE FERRI (5 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;94- PARQUE FERRI&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 5&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 11:22:48&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.87440372681426,-33.0372700739747,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>93-TABOADA (5 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;93-TABOADA&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 5&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 11:32:11&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.8811190462799,-33.03820991693236,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>65-BOULEVARD BALCARCE (3 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;65-BOULEVARD BALCARCE&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 3&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 12:06:24&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.8406212,-32.9174005,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>66- CAP. DE FRAGATA MOYANO (6 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;66- CAP. DE FRAGATA MOYANO&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 6&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 11:08:39&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.8291291,-32.9139231,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>56- ANTARTIDA ARGENTINA (3 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;56- ANTARTIDA ARGENTINA&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 3&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 10:56:21&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-few</styleUrl>
+        <Point>
+          <coordinates>-68.859877,-32.922204,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>95 - PREDIO DE LA VIRGEN (7 bicis)</name>
+        <description>
+              &lt;div style="font-family: Arial, sans-serif;"&gt;
+                &lt;h3&gt;95 - PREDIO DE LA VIRGEN&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Bicicletas disponibles:&lt;/strong&gt; 7&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Espacios disponibles:&lt;/strong&gt; 0&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Total de espacios:&lt;/strong&gt; 0&lt;/p&gt;
+                
+                &lt;p&gt;&lt;strong&gt;Última actualización:&lt;/strong&gt; 10/9/2025, 01:21:21&lt;/p&gt;
+              &lt;/div&gt;
+            </description>
+        <styleUrl>#station-many</styleUrl>
+        <Point>
+          <coordinates>-68.817864,-32.896626,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

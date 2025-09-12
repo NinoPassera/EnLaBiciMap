@@ -179,11 +179,16 @@ app.get('/mendozabike.kml', async (req, res) => {
     // Generar KML
     const kml = generateKML(stationCache.data.stationStatus, stationCache.data.stationInfo);
     
-    // Configurar headers para KML
+    // Configurar headers para KML con mejor compatibilidad
     res.set({
-      'Content-Type': 'application/vnd.google-earth.kml+xml',
+      'Content-Type': 'application/vnd.google-earth.kml+xml; charset=utf-8',
       'Content-Disposition': 'inline; filename="mendozabike.kml"',
-      'Cache-Control': 'public, max-age=300' // Cache por 5 minutos
+      'Cache-Control': 'public, max-age=300', // Cache por 5 minutos
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET',
+      'Access-Control-Allow-Headers': 'Content-Type',
+      'Last-Modified': new Date(stationCache.lastUpdate).toUTCString(),
+      'ETag': `"${stationCache.lastUpdate}"`
     });
     
     res.send(kml);
@@ -198,17 +203,80 @@ app.get('/mendozabike.kml', async (req, res) => {
   }
 });
 
+// Endpoint para obtener datos en formato JSON
+app.get('/api/stations', async (req, res) => {
+  try {
+    // Verificar si necesitamos actualizar el cache
+    const now = Date.now();
+    if (!stationCache.data || (now - stationCache.lastUpdate) > stationCache.updateInterval) {
+      console.log('Actualizando cache de estaciones...');
+      
+      const [stationStatus, stationInfo] = await Promise.all([
+        getStationData(),
+        getStationInfo()
+      ]);
+      
+      stationCache.data = { stationStatus, stationInfo };
+      stationCache.lastUpdate = now;
+    }
+
+    // Crear respuesta con datos procesados
+    const stationInfoMap = {};
+    if (stationCache.data.stationInfo && stationCache.data.stationInfo.data && stationCache.data.stationInfo.data.stations) {
+      stationCache.data.stationInfo.data.stations.forEach(station => {
+        stationInfoMap[station.station_id] = station;
+      });
+    }
+
+    const stations = stationCache.data.stationStatus.data.stations.map(station => {
+      const info = stationInfoMap[station.station_id] || {};
+      return {
+        id: station.station_id,
+        name: info.name || `Estación ${station.station_id}`,
+        address: info.address || null,
+        lat: info.lat || null,
+        lon: info.lon || null,
+        bikesAvailable: station.num_bikes_available || 0,
+        docksAvailable: station.num_docks_available || 0,
+        totalDocks: (station.num_docks_available || 0) + (station.num_bikes_available || 0),
+        lastReported: new Date(station.last_reported * 1000).toISOString(),
+        status: station.num_bikes_available > 5 ? 'many' : station.num_bikes_available > 0 ? 'few' : 'empty'
+      };
+    }).filter(station => station.lat && station.lon);
+
+    res.json({
+      lastUpdate: new Date(stationCache.lastUpdate).toISOString(),
+      totalStations: stations.length,
+      stations: stations
+    });
+    
+  } catch (error) {
+    console.error('Error obteniendo datos de estaciones:', error);
+    res.status(500).json({ 
+      error: 'Error obteniendo datos de estaciones',
+      message: error.message 
+    });
+  }
+});
+
 // Endpoint de información
 app.get('/', (req, res) => {
   res.json({
-    message: 'Servidor de KML para estaciones de bicicletas de Mendoza',
+    message: 'API de estaciones de bicicletas de Mendoza',
     endpoints: {
       kml: '/mendozabike.kml',
+      api: '/api/stations',
       info: '/'
     },
     usage: {
-      googleMaps: 'https://www.google.com/maps?q=https://TU-DOMINIO/mendozabike.kml',
-      description: 'Usa el link de arriba reemplazando TU-DOMINIO con la URL de tu servidor'
+      googleMaps: 'https://www.google.com/maps?q=https://web-production-be984.up.railway.app/mendozabike.kml',
+      googleMyMaps: 'Importa desde URL: https://web-production-be984.up.railway.app/mendozabike.kml',
+      api: 'https://web-production-be984.up.railway.app/api/stations'
+    },
+    features: {
+      autoUpdate: 'Se actualiza automáticamente cada 5 minutos',
+      realTime: 'Datos en tiempo real desde la API GBFS de Mendoza',
+      formats: ['KML para Google Maps', 'JSON para aplicaciones']
     },
     lastUpdate: stationCache.lastUpdate ? new Date(stationCache.lastUpdate).toISOString() : 'Nunca'
   });
