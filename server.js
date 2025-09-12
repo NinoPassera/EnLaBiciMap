@@ -5,6 +5,9 @@ const { Builder } = require('xml2js');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Servir archivos estáticos
+app.use(express.static('public'));
+
 // Configurar CORS para permitir acceso desde Google Maps
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
