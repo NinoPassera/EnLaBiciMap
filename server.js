@@ -5,6 +5,18 @@ const { Builder } = require('xml2js');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Configurar CORS para permitir acceso desde Google Maps
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+  if (req.method === 'OPTIONS') {
+    res.sendStatus(200);
+  } else {
+    next();
+  }
+});
+
 // Cache para los datos de las estaciones (se actualiza cada 5 minutos)
 let stationCache = {
   data: null,
