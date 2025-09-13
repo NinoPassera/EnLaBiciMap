@@ -5,79 +5,382 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estaciones de Bicicletas - Mendoza</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Header */
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #dc2626;
             color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        .stats {
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
-            background: white;
+            padding: 1rem 2rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: #4caf50;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        /* Stats Section */
+        .stats {
+            background: white;
+            padding: 2rem;
+            margin: -2rem auto 0;
+            max-width: 1200px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 10;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
         .stat-card {
             text-align: center;
-            padding: 15px;
+            padding: 1.5rem;
+            border-radius: 8px;
+            background: #f8f9fa;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .stat-card.available {
+            background: linear-gradient(135deg, #4caf50, #66bb6a);
+            color: white;
+        }
+
+        .stat-card.busy {
+            background: linear-gradient(135deg, #dc2626, #ef4444);
+            color: white;
+        }
+
+        .stat-card.total {
+            background: linear-gradient(135deg, #2196f3, #42a5f5);
+            color: white;
+        }
+
         .stat-number {
-            font-size: 24px;
+            font-size: 2.5rem;
             font-weight: bold;
-            color: #667eea;
+            margin-bottom: 0.5rem;
         }
+
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* Map Section */
+        .map-section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .map-container {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            background: white;
+            padding: 1rem;
+        }
+
         #map {
-            height: calc(100vh - 200px);
+            height: 60vh;
             width: 100%;
+            border-radius: 8px;
         }
+
+        .map-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 0 0.5rem;
+        }
+
+        .refresh-btn {
+            background: #dc2626;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .refresh-btn:hover {
+            background: #b91c1c;
+        }
+
+        .last-update {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Loading */
         .loading {
-            position: absolute;
+            position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             background: white;
-            padding: 20px;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #dc2626;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Instructions */
+        .instructions {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            color: #856404;
+        }
+
+        .instructions h3 {
+            color: #dc2626;
+            margin-bottom: 1rem;
+        }
+
+        .instructions ol {
+            margin-left: 1.5rem;
+        }
+
+        .instructions li {
+            margin-bottom: 0.5rem;
+        }
+
+        .instructions a {
+            color: #dc2626;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            background: #dc2626;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .stats {
+                margin: -1rem 1rem 0;
+                padding: 1.5rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .map-controls {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: stretch;
+            }
+
+            #map {
+                height: 50vh;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>🚴 Estaciones de Bicicletas - Mendoza</h1>
-        <p>Datos en tiempo real • Se actualiza automáticamente</p>
-        <button onclick="loadStationData()" style="background: rgba(255,255,255,0.2); color: white; border: 1px solid white; padding: 8px 16px; border-radius: 5px; cursor: pointer; margin-top: 10px;">
-            🔄 Actualizar Ahora
-        </button>
-    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">🚴</div>
+                <div class="logo-text">biciTRAN</div>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#estaciones">Estaciones</a></li>
+                    <li><a href="#mapa">Mapa</a></li>
+                    <li><a href="#ayuda">Ayuda</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <div class="stats" id="stats">
-        <div class="stat-card">
-            <div class="stat-number" id="totalStations">-</div>
-            <div>Total Estaciones</div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Estaciones en Tiempo Real</h1>
+            <p>Conocé la disponibilidad de bicicletas en todas las estaciones de Mendoza</p>
         </div>
-        <div class="stat-card">
-            <div class="stat-number" id="totalBikes">-</div>
-            <div>Bicicletas Disponibles</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-number" id="emptyStations">-</div>
-            <div>Estaciones Vacías</div>
-        </div>
-    </div>
+    </section>
 
-    <div id="map">
-        <div class="loading">
-            <h3>Cargando mapa...</h3>
-            <p>Obteniendo datos de estaciones...</p>
+    <!-- Stats Section -->
+    <section class="stats" id="stats">
+        <div class="stats-grid">
+            <div class="stat-card total">
+                <div class="stat-number" id="totalStations">-</div>
+                <div class="stat-label">Total Estaciones</div>
+            </div>
+            <div class="stat-card available">
+                <div class="stat-number" id="totalBikes">-</div>
+                <div class="stat-label">Bicicletas Disponibles</div>
+            </div>
+            <div class="stat-card busy">
+                <div class="stat-number" id="emptyStations">-</div>
+                <div class="stat-label">Estaciones Vacías</div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-container">
+            <div class="map-controls">
+                <button class="refresh-btn" onclick="loadStationData()">
+                    🔄 Actualizar Ahora
+                </button>
+                <div class="last-update" id="lastUpdate">
+                    Última actualización: -
+                </div>
+            </div>
+            <div id="map">
+                <div class="loading">
+                    <div class="loading-spinner"></div>
+                    <h3>Cargando mapa...</h3>
+                    <p>Obteniendo datos de estaciones...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 biciTRAN Mendoza - Datos en tiempo real desde la API GBFS</p>
+    </footer>
 
     <script>
         let map;
@@ -134,6 +437,7 @@
 
                 updateStats(data);
                 updateMap(data.stations);
+                updateLastUpdate(data.lastUpdate);
                 
                 // Ocultar loading después de cargar
                 if (loadingElement) {
@@ -157,6 +461,26 @@
             document.getElementById('totalStations').textContent = data.totalStations;
             document.getElementById('totalBikes').textContent = totalBikes;
             document.getElementById('emptyStations').textContent = emptyStations;
+        }
+
+        function updateLastUpdate(timestamp) {
+            const lastUpdateElement = document.getElementById('lastUpdate');
+            if (lastUpdateElement && timestamp) {
+                const date = new Date(timestamp);
+                const now = new Date();
+                const diffMinutes = Math.floor((now - date) / (1000 * 60));
+                
+                let timeText;
+                if (diffMinutes < 1) {
+                    timeText = 'hace menos de 1 minuto';
+                } else if (diffMinutes === 1) {
+                    timeText = 'hace 1 minuto';
+                } else {
+                    timeText = `hace ${diffMinutes} minutos`;
+                }
+                
+                lastUpdateElement.textContent = `Última actualización: ${timeText}`;
+            }
         }
 
         function updateMap(stations) {
@@ -183,12 +507,18 @@
 
                 const infoWindow = new google.maps.InfoWindow({
                     content: `
-                        <div style="font-family: Arial, sans-serif; max-width: 250px;">
-                            <h3 style="margin: 0 0 10px 0; color: #333;">${station.name}</h3>
-                            <p style="margin: 5px 0;"><strong>Bicicletas:</strong> ${station.bikesAvailable}</p>
-                            <p style="margin: 5px 0;"><strong>Espacios:</strong> ${station.docksAvailable}/${station.totalDocks}</p>
-                            ${station.address ? `<p style="margin: 5px 0;"><strong>Dirección:</strong> ${station.address}</p>` : ''}
-                            <p style="margin: 5px 0; font-size: 12px; color: #666;">
+                        <div style="font-family: 'Roboto', sans-serif; max-width: 280px; padding: 8px;">
+                            <h3 style="margin: 0 0 12px 0; color: #dc2626; font-size: 16px; font-weight: bold;">${station.name}</h3>
+                            <div style="display: flex; justify-content: space-between; margin: 8px 0; padding: 8px; background: #f8f9fa; border-radius: 6px;">
+                                <span style="color: #4caf50; font-weight: bold;">🚴 ${station.bikesAvailable}</span>
+                                <span style="color: #666; font-size: 14px;">disponibles</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin: 8px 0; padding: 8px; background: #f8f9fa; border-radius: 6px;">
+                                <span style="color: #2196f3; font-weight: bold;">🔒 ${station.docksAvailable}</span>
+                                <span style="color: #666; font-size: 14px;">espacios libres</span>
+                            </div>
+                            ${station.address ? `<p style="margin: 8px 0; font-size: 13px; color: #666; line-height: 1.4;">📍 ${station.address}</p>` : ''}
+                            <p style="margin: 8px 0 0 0; font-size: 11px; color: #999; text-align: center;">
                                 Actualizado: ${new Date(station.lastReported).toLocaleString('es-AR')}
                             </p>
                         </div>
