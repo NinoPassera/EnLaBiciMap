@@ -233,19 +233,36 @@ app.get('/api/stations', async (req, res) => {
 
     const stations = stationCache.data.stationStatus.data.stations.map(station => {
       const info = stationInfoMap[station.station_id] || {};
+      
+      // Calcular espacios libres: capacidad total - bicicletas disponibles
+      const totalCapacity = info.capacity || null;
+      const bikesAvailable = station.num_bikes_available || 0;
+      const docksAvailable = totalCapacity ? Math.max(0, totalCapacity - bikesAvailable) : null;
+      
+      // Corregir fecha si está en el futuro (problema conocido de la API)
+      let lastReported = new Date(station.last_reported * 1000);
+      const currentYear = new Date().getFullYear();
+      if (lastReported.getFullYear() > currentYear) {
+        lastReported.setFullYear(lastReported.getFullYear() - 1);
+      }
+      
       return {
         id: station.station_id,
         name: info.name || `Estación ${station.station_id}`,
         address: info.address || null,
         lat: info.lat || null,
         lon: info.lon || null,
-        bikesAvailable: station.num_bikes_available || 0,
-        docksAvailable: station.num_docks_available || 0,
-        totalDocks: (station.num_docks_available || 0) + (station.num_bikes_available || 0),
-        lastReported: new Date(station.last_reported * 1000).toISOString(),
-        status: station.num_bikes_available > 5 ? 'many' : station.num_bikes_available > 0 ? 'few' : 'empty'
+        bikesAvailable: bikesAvailable,
+        docksAvailable: docksAvailable,
+        totalDocks: totalCapacity,
+        lastReported: lastReported.toISOString(),
+        status: bikesAvailable > 5 ? 'many' : bikesAvailable > 0 ? 'few' : 'empty'
       };
-    }).filter(station => station.lat && station.lon);
+    }).filter(station => {
+      // Filtrar estaciones que no queremos mostrar
+      const excludedStations = ['Hub-prueba', 'TALLER BICITRAN'];
+      return station.lat && station.lon && !excludedStations.includes(station.name);
+    });
 
     res.json({
       lastUpdate: new Date(stationCache.lastUpdate).toISOString(),

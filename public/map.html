@@ -42,14 +42,8 @@
         .logo-icon {
             width: 40px;
             height: 40px;
-            background: #4caf50;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 1.2rem;
+            border-radius: 8px;
+            object-fit: contain;
         }
 
         .logo-text {
@@ -317,7 +311,7 @@
     <header class="header">
         <div class="header-content">
             <div class="logo">
-                <div class="logo-icon">🚴</div>
+                <img src="logo.png" alt="biciTRAN Logo" class="logo-icon">
                 <div class="logo-text">biciTRAN</div>
             </div>
             <nav>
@@ -361,7 +355,7 @@
         <div class="map-container">
             <div class="map-controls">
                 <button class="refresh-btn" onclick="loadStationData()">
-                    🔄 Actualizar Ahora
+                    Actualizar Ahora
                 </button>
                 <div class="last-update" id="lastUpdate">
                     Última actualización: -
@@ -428,7 +422,7 @@
                     loadingElement.innerHTML = '<h3>Actualizando datos...</h3><p>Obteniendo información más reciente...</p>';
                 }
                 
-                const response = await fetch('https://web-production-be984.up.railway.app/api/stations');
+                const response = await fetch('/api/stations');
                 const data = await response.json();
                 
                 if (data.error) {
@@ -514,7 +508,7 @@
                                 <span style="color: #666; font-size: 14px;">disponibles</span>
                             </div>
                             <div style="display: flex; justify-content: space-between; margin: 8px 0; padding: 8px; background: #f8f9fa; border-radius: 6px;">
-                                <span style="color: #2196f3; font-weight: bold;">🔒 ${station.docksAvailable}</span>
+                                <span style="color: #2196f3; font-weight: bold;">🔒 ${station.docksAvailable !== null ? station.docksAvailable : 'N/A'}</span>
                                 <span style="color: #666; font-size: 14px;">espacios libres</span>
                             </div>
                             ${station.address ? `<p style="margin: 8px 0; font-size: 13px; color: #666; line-height: 1.4;">📍 ${station.address}</p>` : ''}
