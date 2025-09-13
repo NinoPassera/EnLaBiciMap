@@ -161,9 +161,15 @@
             align-items: center;
             margin-bottom: 1rem;
             padding: 0 0.5rem;
+            gap: 1rem;
         }
 
-        .refresh-btn {
+        .control-buttons {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .refresh-btn, .location-btn {
             background: #dc2626;
             color: white;
             border: none;
@@ -172,10 +178,26 @@
             font-weight: 500;
             cursor: pointer;
             transition: background 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
-        .refresh-btn:hover {
+        .refresh-btn:hover, .location-btn:hover {
             background: #b91c1c;
+        }
+
+        .location-btn {
+            background: #2196f3;
+        }
+
+        .location-btn:hover {
+            background: #1976d2;
+        }
+
+        .location-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
         }
 
         .last-update {
@@ -280,6 +302,15 @@
                 align-items: stretch;
             }
 
+            .control-buttons {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .refresh-btn, .location-btn {
+                justify-content: center;
+            }
+
             #map {
                 height: 50vh;
             }
@@ -327,9 +358,14 @@
     <section class="map-section">
         <div class="map-container">
             <div class="map-controls">
-                <button class="refresh-btn" onclick="loadStationData()">
-                    Actualizar Ahora
-                </button>
+                <div class="control-buttons">
+                    <button class="refresh-btn" onclick="loadStationData()">
+                        Actualizar Ahora
+                    </button>
+                    <button class="location-btn" id="locationBtn" onclick="getCurrentLocation()">
+                        Mi Ubicación
+                    </button>
+                </div>
                 <div class="last-update" id="lastUpdate">
                     Última actualización: -
                 </div>
@@ -352,6 +388,8 @@
     <script>
         let map;
         let markers = [];
+        let userLocationMarker = null;
+        let userLocation = null;
 
         function initMap() {
             try {
@@ -477,14 +515,14 @@
                         <div style="font-family: 'Roboto', sans-serif; max-width: 280px; padding: 8px;">
                             <h3 style="margin: 0 0 12px 0; color: #dc2626; font-size: 16px; font-weight: bold;">${station.name}</h3>
                             <div style="display: flex; justify-content: space-between; margin: 8px 0; padding: 8px; background: #f8f9fa; border-radius: 6px;">
-                                <span style="color: #4caf50; font-weight: bold;">🚴 ${station.bikesAvailable}</span>
+                                <span style="color: #4caf50; font-weight: bold;">${station.bikesAvailable}</span>
                                 <span style="color: #666; font-size: 14px;">disponibles</span>
                             </div>
                             <div style="display: flex; justify-content: space-between; margin: 8px 0; padding: 8px; background: #f8f9fa; border-radius: 6px;">
-                                <span style="color: #2196f3; font-weight: bold;">🔒 ${station.docksAvailable !== null ? station.docksAvailable : 'N/A'}</span>
+                                <span style="color: #2196f3; font-weight: bold;">${station.docksAvailable !== null ? station.docksAvailable : 'N/A'}</span>
                                 <span style="color: #666; font-size: 14px;">espacios libres</span>
                             </div>
-                            ${station.address ? `<p style="margin: 8px 0; font-size: 13px; color: #666; line-height: 1.4;">📍 ${station.address}</p>` : ''}
+                            ${station.address ? `<p style="margin: 8px 0; font-size: 13px; color: #666; line-height: 1.4;">${station.address}</p>` : ''}
                             <p style="margin: 8px 0 0 0; font-size: 11px; color: #999; text-align: center;">
                                 Actualizado: ${new Date(station.lastReported).toLocaleString('es-AR')}
                             </p>
@@ -506,6 +544,107 @@
             return '#F44336';
         }
 
+        function getCurrentLocation() {
+            const locationBtn = document.getElementById('locationBtn');
+            const originalText = locationBtn.innerHTML;
+            
+            if (!navigator.geolocation) {
+                alert('La geolocalización no es compatible con este navegador.');
+                return;
+            }
+
+            // Cambiar el texto del botón mientras se obtiene la ubicación
+            locationBtn.innerHTML = 'Obteniendo ubicación...';
+            locationBtn.disabled = true;
+
+            navigator.geolocation.getCurrentPosition(
+                function(position) {
+                    const lat = position.coords.latitude;
+                    const lng = position.coords.longitude;
+                    
+                    userLocation = { lat, lng };
+                    
+                    // Centrar el mapa en la ubicación del usuario
+                    map.setCenter(userLocation);
+                    map.setZoom(15);
+                    
+                    // Crear o actualizar el marcador de ubicación del usuario
+                    if (userLocationMarker) {
+                        userLocationMarker.setMap(null);
+                    }
+                    
+                    userLocationMarker = new google.maps.Marker({
+                        position: userLocation,
+                        map: map,
+                        title: 'Tu ubicación actual',
+                        icon: {
+                            path: google.maps.SymbolPath.CIRCLE,
+                            scale: 12,
+                            fillColor: '#2196f3',
+                            fillOpacity: 0.8,
+                            strokeColor: '#fff',
+                            strokeWeight: 3
+                        },
+                        animation: google.maps.Animation.BOUNCE
+                    });
+
+                    // Crear ventana de información para la ubicación del usuario
+                    const infoWindow = new google.maps.InfoWindow({
+                        content: `
+                            <div style="font-family: 'Roboto', sans-serif; max-width: 200px; padding: 8px; text-align: center;">
+                                <h3 style="margin: 0 0 8px 0; color: #2196f3; font-size: 16px; font-weight: bold;">Tu Ubicación</h3>
+                                <p style="margin: 0; font-size: 13px; color: #666;">
+                                    Lat: ${lat.toFixed(6)}<br>
+                                    Lng: ${lng.toFixed(6)}
+                                </p>
+                            </div>
+                        `
+                    });
+
+                    userLocationMarker.addListener('click', () => {
+                        infoWindow.open(map, userLocationMarker);
+                    });
+
+                    // Mostrar la ventana de información automáticamente
+                    infoWindow.open(map, userLocationMarker);
+
+                    // Restaurar el botón
+                    locationBtn.innerHTML = originalText;
+                    locationBtn.disabled = false;
+
+                    console.log('Ubicación obtenida:', userLocation);
+                },
+                function(error) {
+                    let errorMessage = 'Error al obtener la ubicación: ';
+                    switch(error.code) {
+                        case error.PERMISSION_DENIED:
+                            errorMessage += 'Permiso denegado. Por favor, permite el acceso a la ubicación.';
+                            break;
+                        case error.POSITION_UNAVAILABLE:
+                            errorMessage += 'Ubicación no disponible.';
+                            break;
+                        case error.TIMEOUT:
+                            errorMessage += 'Tiempo de espera agotado.';
+                            break;
+                        default:
+                            errorMessage += 'Error desconocido.';
+                            break;
+                    }
+                    
+                    alert(errorMessage);
+                    
+                    // Restaurar el botón
+                    locationBtn.innerHTML = originalText;
+                    locationBtn.disabled = false;
+                },
+                {
+                    enableHighAccuracy: true,
+                    timeout: 10000,
+                    maximumAge: 300000 // 5 minutos
+                }
+            );
+        }
+
         // Recargar datos cada 2 minutos
         setInterval(loadStationData, 2 * 60 * 1000);
     </script>
@@ -517,7 +656,7 @@
     
     <!-- Instrucciones para configurar la API Key -->
     <div id="api-key-instructions" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); z-index: 1000; max-width: 400px;">
-        <h3>🔑 Configurar API Key</h3>
+        <h3>Configurar API Key</h3>
         <p>Para usar esta aplicación, necesitas una API Key de Google Maps:</p>
         <ol>
             <li>Ve a <a href="https://console.cloud.google.com/" target="_blank">Google Cloud Console</a></li>
