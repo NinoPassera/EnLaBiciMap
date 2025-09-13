@@ -262,32 +262,9 @@ app.get('/api/stations', async (req, res) => {
   }
 });
 
-// Endpoint de información
+// Redirigir la página principal a map.html
 app.get('/', (req, res) => {
-  res.json({
-    message: 'API de estaciones de bicicletas de Mendoza',
-    endpoints: {
-      kml: '/mendozabike.kml',
-      api: '/api/stations',
-      webApp: '/simple.html',
-      mapApp: '/map.html',
-      setup: '/setup.html',
-      info: '/'
-    },
-    usage: {
-      webApp: 'https://web-production-be984.up.railway.app/simple.html',
-      mapApp: 'https://web-production-be984.up.railway.app/map.html (requiere API Key)',
-      setup: 'https://web-production-be984.up.railway.app/setup.html',
-      googleMyMaps: 'Importa desde URL: https://web-production-be984.up.railway.app/mendozabike.kml',
-      api: 'https://web-production-be984.up.railway.app/api/stations'
-    },
-    features: {
-      autoUpdate: 'Se actualiza automáticamente cada 5 minutos',
-      realTime: 'Datos en tiempo real desde la API GBFS de Mendoza',
-      formats: ['KML para Google Maps', 'JSON para aplicaciones', 'Web App interactiva']
-    },
-    lastUpdate: stationCache.lastUpdate ? new Date(stationCache.lastUpdate).toISOString() : 'Nunca'
-  });
+  res.redirect('/map.html');
 });
 
 // Endpoint para forzar actualización del cache
@@ -319,6 +296,6 @@ app.post('/refresh', async (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`🚴 Servidor ejecutándose en http://localhost:${PORT}`);
-  console.log(`📱 KML disponible en: http://localhost:${PORT}/mendozabike.kml`);
-  console.log(`🗺️  Link para Google Maps: https://www.google.com/maps?q=http://localhost:${PORT}/mendozabike.kml`);
+  console.log(`🗺️  Mapa interactivo: http://localhost:${PORT}/map.html`);
+  console.log(`📊 API de datos: http://localhost:${PORT}/api/stations`);
 });
