@@ -52,6 +52,9 @@
     <div class="header">
         <h1>🚴 Estaciones de Bicicletas - Mendoza</h1>
         <p>Datos en tiempo real • Se actualiza automáticamente</p>
+        <button onclick="loadStationData()" style="background: rgba(255,255,255,0.2); color: white; border: 1px solid white; padding: 8px 16px; border-radius: 5px; cursor: pointer; margin-top: 10px;">
+            🔄 Actualizar Ahora
+        </button>
     </div>
 
     <div class="stats" id="stats">
@@ -98,6 +101,10 @@
 
         async function loadStationData() {
             try {
+                // Mostrar loading
+                document.querySelector('.loading').style.display = 'block';
+                document.querySelector('.loading').innerHTML = '<h3>Actualizando datos...</h3><p>Obteniendo información más reciente...</p>';
+                
                 const response = await fetch('https://web-production-be984.up.railway.app/api/stations');
                 const data = await response.json();
                 
@@ -107,6 +114,9 @@
 
                 updateStats(data);
                 updateMap(data.stations);
+                
+                // Ocultar loading después de cargar
+                document.querySelector('.loading').style.display = 'none';
                 
             } catch (error) {
                 console.error('Error:', error);
@@ -166,10 +176,6 @@
 
                 markers.push(marker);
             });
-
-            // Ocultar loading
-            const loading = document.querySelector('.loading');
-            if (loading) loading.style.display = 'none';
         }
 
         function getMarkerColor(bikesAvailable) {
@@ -178,8 +184,8 @@
             return '#F44336';
         }
 
-        // Recargar datos cada 5 minutos
-        setInterval(loadStationData, 5 * 60 * 1000);
+        // Recargar datos cada 2 minutos
+        setInterval(loadStationData, 2 * 60 * 1000);
     </script>
 
     <!-- Reemplaza YOUR_API_KEY con tu clave de API de Google Maps -->
