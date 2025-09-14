@@ -77,72 +77,6 @@
             opacity: 0.9;
         }
 
-        /* Stats Section */
-        .stats {
-            background: white;
-            padding: 2rem;
-            margin: -2rem auto 0;
-            max-width: 1200px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            position: relative;
-            z-index: 10;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-        }
-
-        .stat-card {
-            text-align: center;
-            padding: 1.5rem;
-            border-radius: 8px;
-            background: #f8f9fa;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .stat-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-
-        .stat-card.available {
-            background: linear-gradient(135deg, #4caf50, #66bb6a);
-            color: white;
-        }
-
-        .stat-card.busy {
-            background: linear-gradient(135deg, #dc2626, #ef4444);
-            color: white;
-        }
-
-        .stat-card.total {
-            background: linear-gradient(135deg, #2196f3, #42a5f5);
-            color: white;
-        }
-
-        .stat-card.repair {
-            background: linear-gradient(135deg, #9c27b0, #ba68c8);
-            color: white;
-        }
-
-        .stat-card.bikepath {
-            background: linear-gradient(135deg, #FF9800, #FFB74D);
-            color: white;
-        }
-
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-        }
-
-        .stat-label {
-            font-size: 1rem;
-            opacity: 0.9;
-        }
 
         /* Map Section */
         .map-section {
@@ -180,34 +114,158 @@
         }
 
         .refresh-btn, .location-btn {
-            background: #dc2626;
+            background: linear-gradient(135deg, #dc2626, #ef4444);
             color: white;
             border: none;
-            padding: 0.75rem 1.5rem;
-            border-radius: 6px;
+            padding: 1.5rem;
+            border-radius: 8px;
             font-weight: 500;
             cursor: pointer;
-            transition: background 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
             display: flex;
+            flex-direction: column;
             align-items: center;
             gap: 0.5rem;
+            text-align: center;
         }
 
         .refresh-btn:hover, .location-btn:hover {
-            background: #b91c1c;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
         .location-btn {
-            background: #2196f3;
-        }
-
-        .location-btn:hover {
-            background: #1976d2;
+            background: linear-gradient(135deg, #2196f3, #42a5f5);
         }
 
         .location-btn:disabled {
-            background: #ccc;
+            background: linear-gradient(135deg, #ccc, #ddd);
             cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .control-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .control-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* Filter Buttons - Style like stat cards */
+        .filter-section {
+            margin: 2rem 0;
+            padding: 0 2rem;
+        }
+
+        .filter-buttons {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 2rem;
+        }
+
+        .control-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .control-btn {
+            text-align: center;
+            padding: 1rem;
+            border-radius: 8px;
+            background: #f8f9fa;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.25rem;
+            text-align: center;
+        }
+
+        .control-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .control-btn.refresh-btn {
+            background: linear-gradient(135deg, #dc2626, #ef4444);
+            color: white;
+        }
+
+        .control-btn.location-btn {
+            background: linear-gradient(135deg, #2196f3, #42a5f5);
+            color: white;
+        }
+
+        .control-btn.location-btn:disabled {
+            background: linear-gradient(135deg, #ccc, #ddd);
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .control-icon-small {
+            font-size: 1.2rem;
+            margin-bottom: 0.25rem;
+            display: block;
+        }
+
+        .control-label-small {
+            font-size: 0.8rem;
+            opacity: 0.9;
+        }
+
+        .filter-btn {
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 8px;
+            background: #f8f9fa;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .filter-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .filter-btn.bikepath.active {
+            background: linear-gradient(135deg, #FF9800, #FFB74D);
+            color: white;
+        }
+
+        .filter-btn.repair.active {
+            background: linear-gradient(135deg, #9c27b0, #ba68c8);
+            color: white;
+        }
+
+        .filter-btn.stations.active {
+            background: linear-gradient(135deg, #dc2626, #ef4444);
+            color: white;
+        }
+
+        .filter-btn.all.active {
+            background: linear-gradient(135deg, #4caf50, #66bb6a);
+            color: white;
+        }
+
+        .filter-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .filter-label {
+            font-size: 1rem;
+            opacity: 0.9;
         }
 
         .last-update {
@@ -296,15 +354,6 @@
                 font-size: 1rem;
             }
 
-            .stats {
-                margin: -1rem 1rem 0;
-                padding: 1.5rem;
-            }
-
-            .stats-grid {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
 
             .map-controls {
                 flex-direction: column;
@@ -314,11 +363,20 @@
 
             .control-buttons {
                 flex-direction: column;
-                gap: 0.5rem;
+                gap: 1rem;
             }
 
-            .refresh-btn, .location-btn {
-                justify-content: center;
+            .filter-buttons {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+
+            .control-buttons {
+                grid-column: 1 / -1;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+                margin-top: 1rem;
             }
 
             #map {
@@ -346,28 +404,35 @@
         </div>
     </section>
 
-        <!-- Stats Section -->
-        <section class="stats" id="stats">
-            <div class="stats-grid">
-                <div class="stat-card total">
-                    <div class="stat-number" id="totalStations">-</div>
-                    <div class="stat-label">Total Estaciones</div>
-                </div>
-                <div class="stat-card available">
-                    <div class="stat-number" id="totalBikes">-</div>
-                    <div class="stat-label">Bicicletas Disponibles</div>
-                </div>
-                <div class="stat-card busy">
-                    <div class="stat-number" id="emptyStations">-</div>
-                    <div class="stat-label">Estaciones Vacías</div>
-                </div>
-                <div class="stat-card repair">
-                    <div class="stat-number" id="totalRepairPoints">-</div>
-                    <div class="stat-label">Puntos de Reparación</div>
-                </div>
-                <div class="stat-card bikepath">
-                    <div class="stat-number" id="totalBikePaths">-</div>
-                    <div class="stat-label">Ciclovías</div>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <div class="filter-buttons">
+                <button class="filter-btn bikepath" onclick="filterMap('bikepath')">
+                    <span class="filter-icon">🚴</span>
+                    <div class="filter-label">Ciclovías</div>
+                </button>
+                <button class="filter-btn repair" onclick="filterMap('repair')">
+                    <span class="filter-icon">🔧</span>
+                    <div class="filter-label">Puntos de Reparación</div>
+                </button>
+                <button class="filter-btn stations" onclick="filterMap('stations')">
+                    <span class="filter-icon">🚲</span>
+                    <div class="filter-label">Estaciones</div>
+                </button>
+                <button class="filter-btn all active" onclick="filterMap('all')">
+                    <span class="filter-icon">🌐</span>
+                    <div class="filter-label">Todo</div>
+                </button>
+                <div class="control-buttons">
+                    <button class="control-btn refresh-btn" onclick="loadStationData()">
+                        <span class="control-icon-small">🔄</span>
+                        <div class="control-label-small">Actualizar</div>
+                    </button>
+                    <button class="control-btn location-btn" id="locationBtn" onclick="getCurrentLocation()">
+                        <span class="control-icon-small">📍</span>
+                        <div class="control-label-small">Mi Ubicación</div>
+                    </button>
                 </div>
             </div>
         </section>
@@ -376,14 +441,6 @@
     <section class="map-section">
         <div class="map-container">
             <div class="map-controls">
-                <div class="control-buttons">
-                    <button class="refresh-btn" onclick="loadStationData()">
-                        Actualizar Ahora
-                    </button>
-                    <button class="location-btn" id="locationBtn" onclick="getCurrentLocation()">
-                        Mi Ubicación
-                    </button>
-                </div>
                 <div class="last-update" id="lastUpdate">
                     Última actualización: -
                 </div>
@@ -410,6 +467,14 @@
         let bikePathPolylines = [];
         let userLocationMarker = null;
         let userLocation = null;
+        
+        // Variables para control de filtros
+        let currentFilters = {
+            bikepath: false,
+            repair: false,
+            stations: false,
+            all: true
+        };
 
         function initMap() {
             try {
@@ -460,7 +525,6 @@
                     throw new Error(data.message);
                 }
 
-                updateStats(data);
                 updateMap(data.stations, data.repairPoints, data.bikePaths);
                 updateLastUpdate(data.lastUpdate);
                 
@@ -479,16 +543,6 @@
             }
         }
 
-        function updateStats(data) {
-            const totalBikes = data.stations.reduce((sum, station) => sum + station.bikesAvailable, 0);
-            const emptyStations = data.stations.filter(station => station.bikesAvailable === 0).length;
-
-            document.getElementById('totalStations').textContent = data.totalStations;
-            document.getElementById('totalBikes').textContent = totalBikes;
-            document.getElementById('emptyStations').textContent = emptyStations;
-            document.getElementById('totalRepairPoints').textContent = data.totalRepairPoints || 0;
-            document.getElementById('totalBikePaths').textContent = data.totalBikePaths || 0;
-        }
 
         function updateLastUpdate(timestamp) {
             const lastUpdateElement = document.getElementById('lastUpdate');
@@ -508,6 +562,64 @@
                 
                 lastUpdateElement.textContent = `Última actualización: ${timeText}`;
             }
+        }
+
+        function filterMap(filterType) {
+            // Actualizar estado de filtros
+            currentFilters = {
+                bikepath: false,
+                repair: false,
+                stations: false,
+                all: false
+            };
+            
+            if (filterType === 'all') {
+                currentFilters.all = true;
+                currentFilters.bikepath = true;
+                currentFilters.repair = true;
+                currentFilters.stations = true;
+            } else {
+                currentFilters[filterType] = true;
+            }
+            
+            // Actualizar clases de botones
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            document.querySelector(`.filter-btn.${filterType}`).classList.add('active');
+            
+            // Re-aplicar filtros al mapa
+            applyFilters();
+        }
+        
+        function applyFilters() {
+            // Aplicar filtros a marcadores de estaciones
+            markers.forEach(marker => {
+                if (currentFilters.stations || currentFilters.all) {
+                    marker.setMap(map);
+                } else {
+                    marker.setMap(null);
+                }
+            });
+            
+            // Aplicar filtros a marcadores de reparación
+            repairMarkers.forEach(marker => {
+                if (currentFilters.repair || currentFilters.all) {
+                    marker.setMap(map);
+                } else {
+                    marker.setMap(null);
+                }
+            });
+            
+            // Aplicar filtros a ciclovías
+            bikePathPolylines.forEach(polyline => {
+                if (currentFilters.bikepath || currentFilters.all) {
+                    polyline.setMap(map);
+                } else {
+                    polyline.setMap(null);
+                }
+            });
         }
 
         function updateMap(stations, repairPoints = [], bikePaths = []) {
@@ -657,6 +769,9 @@
 
                 bikePathPolylines.push(polyline);
             });
+            
+            // Aplicar filtros después de crear todos los elementos
+            applyFilters();
         }
 
         function getMarkerIcon(bikesAvailable, totalCapacity) {
